@@ -41,5 +41,6 @@ $echo 0 > /dev/myled0
 ＊カーネルモジュールをアンインストールする場合
 $sudo chmmod myled
 
-
+#ライセンス
+このリポジトリはGPLv3である。
 
