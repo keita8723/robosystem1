@@ -19,12 +19,12 @@ gpio23,24,25にLEDのアノードをつなぎ、GNDには抵抗とLEDのカソ�
 
 ## 使い方
 以下のコマンドを順番に入力していく。
-...
+```
 $git clone https://github.com/keita8723/robosystem1.git
 $make
 $sudo insmod myled.ko
 $sudo chmod 666 /dev/myled0
-...
+```
 ＊LED３個を点灯させる。
 ,,,
 $echo 1 > /dev/myled0 
