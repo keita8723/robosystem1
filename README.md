@@ -26,22 +26,26 @@ $sudo insmod myled.ko
 $sudo chmod 666 /dev/myled0
 ```
 ＊LED３個を点灯させる。
-,,,
+```
 $echo 1 > /dev/myled0 
-,,,
+```
 ＊LED２個を点灯させる。
+```
 $echo 2 > /dev/myled0 
 $echo 3 > /dev/myled0 
-
+```
 ＊LED１個を点灯させる。
+```
 $echo 4 > /dev/myled0 
-
+```
 ＊LEDを消灯させる。
+```
 $echo 0 > /dev/myled0 
-
+```
 ＊カーネルモジュールをアンインストールする場合
+```
 $sudo rmmod myled
-
+```
 ## ライセンス
 このリポジトリはGPLv3である。
 
