@@ -3,15 +3,15 @@
 LEDを点灯させるデバイスドライバーでコマンド入力をするとLEDが点灯したり消灯するプログラムを書きました。
 
 ## 使用した材料
-‐ LED×３
+-  LED×３
 - 抵抗（１００Ω）×３
 - ジャンパ線（オスーメス）
-‐ ブレッドボード
+-  ブレッドボード
 
 ## 環境
--ソフトウェア
+- ソフトウェア
 Raspberry Pi4 MOdelB
--ハードウェア
+- ハードウェア
 ubuntu 18.04
 
 ## 使用した回路
@@ -25,24 +25,24 @@ $make
 $sudo insmod myled.ko
 $sudo chmod 666 /dev/myled0
 ```
-＊LED３個を点灯させる。
+- LED３個を点灯させる。
 ```
 $echo 1 > /dev/myled0 
 ```
-＊LED２個を点灯させる。
+- LED２個を点灯させる。
 ```
 $echo 2 > /dev/myled0 
 $echo 3 > /dev/myled0 
 ```
-＊LED１個を点灯させる。
+- LED１個を点灯させる。
 ```
 $echo 4 > /dev/myled0 
 ```
-＊LEDを消灯させる。
+- LEDを消灯させる。
 ```
 $echo 0 > /dev/myled0 
 ```
-＊カーネルモジュールをアンインストールする場合
+- カーネルモジュールをアンインストールする場合
 ```
 $sudo rmmod myled
 ```
